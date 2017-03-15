@@ -32,9 +32,9 @@ idWindow(ByRef tx, ByRef ty, ByRef wid)
 	keywait, MButton
 
 	MouseGetPos, tx, ty, wid
-	sleep 200
+	sleep, 200
 	wingettitle, wt, ahk_id %wid%
-	sleep 200
+	sleep, 200
 	msgbox,0x1020,%title%,The window you selected was %wt%
 	sleep, 200
 

@@ -1,4 +1,6 @@
-~> Auto exobit harvest
+~> Auto exobit harvest {
+issue: can't stand in the same place, exobit doesn't spawn
+}
 ~> pvp practice {
 add:
     block
