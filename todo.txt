@@ -1,0 +1,10 @@
+~> Auto exobit harvest
+~> pvp practice {
+add:
+    block
+    roll
+    melee hold
+    ranged hold
+    blockbreak
+    melee combos
+}
