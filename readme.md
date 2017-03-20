@@ -12,7 +12,7 @@ The file that actually does the work is **core-ahk.ahk** (*or **core-ahk.exe** i
 1. Start **core-ahk.ahk** (*or **core-ahk.exe** if you don't have AutoHotkey installed*).
 2. Move your mouse cursor to the DCUO window you want to use the bot and press the **middle mouse button**.
 3. Practice so you become less noob.
-4. Press **Alt+End** when you want to pause the script. (A sound will be played to confirm you paused it.)
+4. Press **Alt+End** when you want to pause the script. (A sound will be played to confirm you paused it)
 ------
 
 ### Note
