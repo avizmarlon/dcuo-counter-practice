@@ -3,7 +3,7 @@
 I made this little bot to help me practice my counters on **DCUO**. It serves no other purpose and its completely harmless to the game. Its pretty much like a sparring target for counters.
 
 Most files are for test purposes only.
-The file that actually does the work is core-ahk.ahk (or core-ahk.exe if you don't have AutoHotkey installed).
+The file that actually does the work is **core-ahk.ahk** (*or **core-ahk.exe** if you don't have AutoHotkey installed*).
 
 ------
 
