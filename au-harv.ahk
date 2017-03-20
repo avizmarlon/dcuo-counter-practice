@@ -32,6 +32,20 @@ loop
 	Send {e down}
 	sleep, 2000
 	Send {e up}
+
+	sleep, 6000
+
+	Send {w down}
+	sleep, 6800
+	Send {w up}
+
+	sleep, 1000
+
+	Send {s down}
+	sleep, 6785
+	Send {s up}
+
+	sleep, 1000
 }
 
 ;------------------------------------------------
