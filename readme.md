@@ -15,11 +15,11 @@ The file that actually does the work is **core-ahk.ahk** (*or **core-ahk.exe** i
 4. Press **Alt+End** when you want to pause the script. (A sound will be played to confirm you paused it)
 ------
 
-### Note
+### Notes
 
-Unfortunately, `ControlSend` doesn't work with DCUO (`ControlClick` does though, read notes.txt for more info). You have to execute the script in a different computer (or a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine), good luck with performance issues =D).
+- Unfortunately, `ControlSend` doesn't work with DCUO (`ControlClick` does though, read [notes.txt](/blob/master/data-tools-tests/notes.txt) for more info). You have to execute the script in a different computer (or a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine), good luck with performance issues =D).
 
-The bot is stupid in its initial version and only fights with weapons for now. I might implement use of powers in the future.
+- The bot is stupid in its initial version and only fights with weapons for now. I might implement use of powers in the future.
 
 ------
 
