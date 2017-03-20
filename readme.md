@@ -1,4 +1,4 @@
-Most files are for test purpose only.
+Most files are for test purposes only.
 The file that actually does the work is core-ahk.ahk.
 
 ### Note
