@@ -23,14 +23,12 @@ print(wChild)
 # hwndEdit = win32gui.FindWindowEx(hwndMain, hwndChild, "Edit", "test - Notepad");
 # but I could never figure it out. In addition to that all documentation on Microsoft's site is vary ambiguous, So I've added my own of how I understand it.
 
-# That should get you started and should be helpful for others. If anyone else had revisions let me know.
-
 
 # pseudoCode {
-# 	leftClick(tap) # melee tap
-# 	leftClick(hold) # melee hold/lunge
-# 	rightClick(tap) # range tap
-# 	rightClick(hold) # range hold/BB
-# 	pressShift # block
-# 	pressShift+ArrowKey(arrowDirection) # roll
+# 	melee(tap)
+# 	melee(hold)
+# 	ranged(tap)
+# 	ranged(hold)
+# 	block()
+# 	block(roll)
 # }
