@@ -1,0 +1,38 @@
+Use ControlClick
+
+ - Temporarily change in-game keybinding (any key) to a mouse button.
+ - Only change when an action that involves a key other than a mouse button needs to be done.
+
+This is because ControlSend doesn't work, but ControlClick does, however it only sends mouse button presses, so you have to map a keyboard key to a mouse button temporarily according to the iteration in the loop.
+
+============================
+
+Use Joystick buttons
+
+ - Map joystick buttons to keyboard buttons
+ - Use joystick buttons in-game instead of keyboard (make use of in-game joystick support)
+
+===========================
+Upper-case letter uses shift in-game, and the shift actually works, but it doesn't work when I try sending "shift" itself.
+
+ - Map shift to a different button and send a random upper-case letter so that when the script presses shift to make it upper-case, it will actually send the key you mapped to the shift button.
+
+==========================
+Test VMware (Send {key})
+
+=========================
+Test Microsoft's Virtual PC (Send {key})
+
+======================
+Test: Send, function() -> function sends controlsend {key}
+Test: ControlSend, function() - > function sends send {key}
+
+============================
+Try pywin32 libs
+
+============================
+Try PostMessage to inactive window
+Try PostMessage a function that Send {key} or ControlSend {key}
+
+======================
+
