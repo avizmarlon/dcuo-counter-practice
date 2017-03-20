@@ -17,7 +17,7 @@ The file that actually does the work is **core-ahk.ahk** (*or **core-ahk.exe** i
 
 ### Notes
 
-- Unfortunately, `ControlSend` doesn't work with DCUO (`ControlClick` does though, read [notes.txt](/data-tools-tests/notes.txt) for more info). You have to execute the script in a different computer (or a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine), good luck with performance issues =D).
+- Unfortunately, `ControlSend` doesn't work with DCUO (`ControlClick` does though, read [notes.txt](/data-tools-tests/notes.txt) for more info). You have to execute the script in a different computer (or a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine "Virtual machine - Wikipedia"), good luck with performance issues =D).
 
 - The bot is stupid in its initial version and only fights with weapons for now. I might implement use of powers in the future.
 
@@ -25,9 +25,9 @@ The file that actually does the work is **core-ahk.ahk** (*or **core-ahk.exe** i
 
 ### "Standing in the shoulders of giants"
 
-Some of the core script uses snippets from the [Control Click Tester](https://autohotkey.com/board/topic/82924-basic-controlclick-tester/) made by @girlgamer.
+Some of the core script uses snippets from the [Control Click Tester](https://autohotkey.com/board/topic/82924-basic-controlclick-tester/ "AutoHotkey forum") made by @girlgamer.
 
-I also used [Send and Click Tool V4.1](https://autohotkey.com/board/topic/95653-send-and-click-tool-v41/), made by @SnowFlake_FlowSnake.
+I also used [Send and Click Tool V4.1](https://autohotkey.com/board/topic/95653-send-and-click-tool-v41/ "AutoHotkey forum"), made by @SnowFlake_FlowSnake.
 
 ------
 
