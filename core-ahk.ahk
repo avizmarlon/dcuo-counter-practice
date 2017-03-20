@@ -3,16 +3,6 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-#SingleInstance, Force
-#Persistent
-#MaxThreadsPerHotkey 2
-SetTitleMatchMode, 2
-SetBatchLines, -1
-SetKeyDelay, 50,50
-DetectHiddenWindows, On
-CoordMode, Pixel, Screen
-CoordMode, Mouse, Screen
-CoordMode, Tooltip, Screen
 
 fnTT(msg)
 {	
@@ -26,7 +16,7 @@ fnTT(msg)
 
 idWindow(ByRef tx, ByRef ty, ByRef wid)
 {
-	fnTT("Use the Middle Mouse button to select the window you want to send control clicks to.")
+	fnTT("Use the Middle Mouse button to select the window you want to send keys to.")
 	keywait, MButton, D
 	tooltip
 	keywait, MButton
@@ -34,8 +24,6 @@ idWindow(ByRef tx, ByRef ty, ByRef wid)
 	MouseGetPos, tx, ty, wid
 	sleep, 200
 	wingettitle, wt, ahk_id %wid%
-	sleep, 200
-	msgbox,0x1020,%title%,The window you selected was %wt%
 	sleep, 200
 
 	return
@@ -48,29 +36,63 @@ dcuoRAND(min, max)
 }
 
 idWindow(tx, ty, wid)
+winactivate, ahk_id %wid%
 
 loop{
-	rng := dcuoRAND(1, 2)
-	; msgbox % rng
+	rng := dcuoRAND(1, 14)
 	sleep, 200
+		
+	send, {LButton down}
+	sleep, 200
+	send, {LButton up}
+	sleep, 100
 
-	if (rng = 1)
+	; Melee hold
+	if (rng = 2 or rng = 6 or rng = 10 or rng = 12)
 	{
-		; melee tap
-		controlclick, x%tx% y%ty%, ahk_id %wid%,,left,1
+		send, {LButton down}
+		sleep, 500
+		send, {LButton up}
+		sleep, 600
 	}
-	else if (rng = 2)
+
+	; Ranged tap
+	if (rng = 3)
 	{
-		; ranged tap
-		controlclick, x%tx% y%ty%, ahk_id %wid%,,right,1
+		send, {RButton down}
+		sleep, 200
+		send, {RButton up}
+		sleep, 200
+	}
+
+	; Blockbreak
+	if (rng = 4 or rng = 7)
+	{
+		send, {RButton down}
+		sleep, 400
+		send, {RButton up}
+		sleep, 200
+		send, {Space down}
+		sleep, 200
+		send, {Space up}
+	}
+
+	; Block
+	if (rng = 5 or eng = 9 or rng = 11 or rng = 1)
+	{
+		send, {Shift down}
+		sleep, 400
+		send, {Shift up}
+		rollRNG := dcuoRAND(1, 3)
+		if (rollRNG = 2)
+		{
+			send, {s down}
+			sleep, 400
+			send, {s up}
+		}
+		sleep, 500
 	}
 }
-
-
-
-
-
-
 
 ;------------------------------------------------
 ; pause script
