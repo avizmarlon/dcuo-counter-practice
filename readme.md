@@ -1,3 +1,7 @@
+### WTH is this?
+
+I made this little bot to help me practice my counters on DCUO. It serves no other purpose and its completely harmless to the game. Its pretty much like a sparring target for counters.
+
 Most files are for test purposes only.
 The file that actually does the work is core-ahk.ahk.
 
@@ -5,8 +9,8 @@ The file that actually does the work is core-ahk.ahk.
 
 Unfortunately, ControlSend doesn't work with DCUO (ControlClick does though, read notes.txt for more info). You have to execute the script in a different computer (or a virtual machine, good luck with performance issues btw).
 
+It only fights with weapons for now. I might implement use of powers in the future.
 ------
-
 Some of the core script uses snippets from the [Control Click Tester](https://autohotkey.com/board/topic/82924-basic-controlclick-tester/) made by @girlgamer.
 
 I also used [Send and Click Tool V4.1](https://autohotkey.com/board/topic/95653-send-and-click-tool-v41/), made by @SnowFlake_FlowSnake.
